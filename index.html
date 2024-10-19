@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Competition</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Login Section -->
+    <div class="login-container">
+      <h1>Login Now</h1>
+      <div class="loginForm">
+        <form>
+          <div>
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <button id="loginBtn">Login Now</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz-container">
+      <h1>Quiz Competition</h1>
+      <div id="timer">Time Left: 10:00</div>
+
+      <div id="question-container">
+        <h2 id="question">Question will appear here</h2>
+        <div id="options">
+          <!-- Options will be injected here -->
+        </div>
+      </div>
+
+      <button id="nextBtn">Next Question</button>
+      <button id="submitBtn">Submit Quiz</button>
+
+      <div id="score-container">
+        <!-- Score will be shown here after submission -->
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
